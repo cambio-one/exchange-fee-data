@@ -51,7 +51,7 @@ Each dated folder is written once and never edited. A later correction arrives a
 
 ## Publications using this data
 
-- *What $200 and $1,000 of BTC → USDT really cost* — https://cambio.one/blog/btc-to-usdt-real-cost-at-three-exchanges-september-2026
+- *What $200 and $1,000 of BTC → USDT really cost* — https://cambio.one/blog/btc-to-usdt-real-cost-at-three-exchanges-september-2026?utm_source=github&utm_medium=dataset&utm_campaign=exchange-fee-data-2026-09
 
 ## Corrections
 
@@ -59,4 +59,4 @@ Found a mistake? Open an issue, or write to support@cambio.one. Corrections are 
 
 ## Licence
 
-CC BY 4.0 — use it, including commercially, with credit to Cambio (https://cambio.one). See [LICENSE](LICENSE).
+CC BY 4.0 — use it, including commercially, with credit to Cambio (https://cambio.one/?utm_source=github&utm_medium=dataset&utm_campaign=exchange-fee-data-2026-09). See [LICENSE](LICENSE).
