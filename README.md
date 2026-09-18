@@ -51,7 +51,8 @@ Each dated folder is written once and never edited. A later correction arrives a
 
 ## Publications using this data
 
-- *What $200 and $1,000 of BTC → USDT really cost* — https://cambio.one/blog/btc-to-usdt-real-cost-at-three-exchanges-september-2026?utm_source=github&utm_medium=dataset&utm_campaign=exchange-fee-data-2026-09
+- *What $200 and $1,000 of BTC → USDT on Tron really cost: 716 checks of five exchanges* (16–18 Sep 2026) — https://cambio.one/blog/btc-to-usdt-real-cost-at-five-exchanges-september-2026?utm_source=github&utm_medium=dataset&utm_campaign=exchange-fee-data-2026-09
+- *What $200 and $1,000 of BTC → USDT really cost: 546 checks of three exchanges* (13–15 Sep 2026, superseded by the five-exchange measurement above; the folder stays as published) — https://cambio.one/blog/btc-to-usdt-real-cost-at-five-exchanges-september-2026?utm_source=github&utm_medium=dataset&utm_campaign=exchange-fee-data-2026-09
 
 ## Corrections
 
