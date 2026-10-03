@@ -14,6 +14,8 @@ data/<YYYY-MM>-<route>/
 
 Each dated folder is written once and never edited. A later correction arrives as a new folder, not as a change to an old one.
 
+**Updates:** a new folder is added every week.
+
 ### `website-checks.csv`
 
 | column | meaning |
@@ -38,7 +40,7 @@ Each dated folder is written once and never edited. A later correction arrives a
 
 ## How the checks are made
 
-- A small server, separate from Cambio's site, asks each exchange's own public website for a floating-rate quote, once an hour, at three sizes.
+- A small server, separate from Cambio's site, asks each exchange's own public website for a floating-rate quote at three sizes, several times a day. How often varies by exchange and route; every row carries the time of its check.
 - The market price is read from Binance at the same moment as the check.
 - `received_usdt` is what the exchange said would arrive, so its margin and its withdrawal fee are already inside the number. That is the point: the cost of a swap is what lands in your wallet.
 
@@ -46,7 +48,7 @@ Each dated folder is written once and never edited. A later correction arrives a
 
 - **These are quotes, not completed swaps.** A floating rate can move between the quote and the payout, in either direction.
 - **A quote is not a promise.** Minimums, verification checks and network conditions can change what an exchange actually pays.
-- **The sample is small and dated.** Each folder covers a few days on one route. Read it as observations with timestamps, not as a league table of exchanges.
+- **The sample is small and dated.** Each folder covers a few days to a week on one route. Read it as observations with timestamps, not as a league table of exchanges.
 - **Cambio is one of the parties measured here.** The Cambio rows come from its own quotes, recorded the same way. Check them against the exchanges' rows yourself; that is why both files are published.
 
 ## Publications using this data
