@@ -7,14 +7,18 @@ Every figure Cambio publishes about another exchange comes from this data. It is
 ## What is in here
 
 ```
-data/<YYYY-MM>-<route>/
+data/<YYYY-MM-DD>-to-<MM-DD>-<from>-to-<to>/   one route, one week (Monday to Sunday, UTC)
   website-checks.csv   one row per check of an exchange's own website
   cambio-quotes.csv    one row per Cambio quote on the same route
+  README.md            what the folder holds: the week, the exchanges, the row counts
+data/LATEST.md         the newest week's folders
 ```
+
+The first folders (September 2026) are named `data/<YYYY-MM>-<route>/` or for their dates; they stay as published.
 
 Each dated folder is written once and never edited. A later correction arrives as a new folder, not as a change to an old one.
 
-**Updates:** a new folder is added every week.
+**Updates:** every Monday, automatically, for the week before: every route with at least 50 checks of at least two exchanges that week, the busiest twelve. `data/LATEST.md` always lists the newest week.
 
 ### `website-checks.csv`
 
@@ -22,10 +26,10 @@ Each dated folder is written once and never edited. A later correction arrives a
 |---|---|
 | `exchange` | the exchange checked |
 | `band_usd` | the size asked for, in US dollars: 200, 1000 or 5000 |
-| `sent_btc` | the amount of the source coin used for that check |
-| `received_usdt` | what the exchange's own website said it would deliver |
-| `market_usdt` | the market price at the same moment (Binance), for the same amount |
-| `pct_below_market` | how far `received_usdt` sits below `market_usdt`, in percent |
+| `sent_<coin>` | the amount of the source coin used for that check (`sent_btc`, `sent_usdt`, …) |
+| `received_<coin>` | what the exchange's own website said it would deliver |
+| `market_<coin>` | the market price at the same moment (Binance), for the same amount |
+| `pct_below_market` | how far `received_<coin>` sits below `market_<coin>`, in percent |
 | `checked_at_utc` | when the check was made, UTC, ISO 8601 |
 
 ### `cambio-quotes.csv`
@@ -33,9 +37,9 @@ Each dated folder is written once and never edited. A later correction arrives a
 | column | meaning |
 |---|---|
 | `exchange` | always `Cambio` |
-| `sent_btc` | the amount quoted |
-| `received_usdt` | what Cambio's quote said it would deliver |
-| `stated_network_fee_usdt` | the network fee stated on that quote, already taken out of `received_usdt` |
+| `sent_<coin>` | the amount quoted |
+| `received_<coin>` | what Cambio's quote said it would deliver |
+| `stated_network_fee_<coin>` | the network fee stated on that quote, already taken out of `received_<coin>` |
 | `quoted_at_utc` | when the quote was made, UTC, ISO 8601 |
 
 ## How the checks are made
